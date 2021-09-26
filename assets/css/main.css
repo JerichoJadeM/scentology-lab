@@ -24,7 +24,7 @@
     box-shadow: 0 10px 16px -6px rgb(14, 13, 13);
   }
 
-  .nav-link:hover{
+  .nav-link:hover, .active{
     color: #c6e2ff;
 		text-shadow:
     0 0 2px rgba(202,228,225,0.92),
