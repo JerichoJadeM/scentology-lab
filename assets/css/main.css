@@ -18,6 +18,12 @@
     font-size: 20px;
   }
 
+  .navbar {
+    -webkit-box-shadow: 0 10px 6px -6px rgb(29, 28, 28);
+    -moz-box-shadow: 0 10px 6px -6px rgb(48, 42, 42);
+    box-shadow: 0 10px 16px -6px rgb(14, 13, 13);
+  }
+
   .nav-link:hover{
     color: #c6e2ff;
 		text-shadow:
@@ -81,7 +87,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 650px) {
     .title-logo{
       font-size: 1rem;
     }
