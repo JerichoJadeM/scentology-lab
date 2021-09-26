@@ -1,3 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+
+  body{
+    background-color: #DDFFE3;
+  }
+
+  .logo{
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    width: 50px;
+    box-shadow: 0px 0px 10px gold;
+    border-radius: 50%;
+    animation: float 1s ease-in-out infinite;
+  }
+
+  nav{
+    font-size: 20px;
+  }
+
+  .nav-link:hover{
+    color: #c6e2ff;
+		text-shadow:
+    0 0 2px rgba(202,228,225,0.92),
+    0 0 10px rgba(202,228,225,0.34),
+    0 0 4px rgba(30,132,242,0.52),
+    0 0 7px rgba(30,132,242,0.92),
+    0 0 11px rgba(30,132,242,0.78),
+    0 0 16px rgba(30,132,242,0.92);
+  }
+
+  .title-logo {
+    margin: 0;
+    line-height: 10px;
+    font-family: 'Fleur De Leah', cursive;
+    color: rgb(227, 238, 228);
+    padding-left: 5px;
+  }
+
+  .container{
+    margin-top: 50px;
+  }
+
+  h1, h2{
+    font-weight: bold;
+    color: #002607;
+  }
+
+  .bgcolor{
+    background-color: #00563B;
+  }
+
+
+  @keyframes float{
+    0%{
+        transform: translatey(0px);
+      }
+    50%{
+        transform: translatey(4px);
+      }
+    100%{
+        transform: translatey(0px);
+    }
+  }
+
 .bd-placeholder-img {
     font-size: 1.125rem;
     text-anchor: middle;
