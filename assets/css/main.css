@@ -75,4 +75,18 @@
     .bd-placeholder-img-lg {
       font-size: 3.5rem;
     }
+
+    .title-logo{
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .title-logo{
+      font-size: 1rem;
+    }
+
+    .logo{
+      margin-left: 5px;
+    }
   }
