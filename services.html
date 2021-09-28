@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A project for Web Development Level 2">
     <meta name="author" content="Jericho, Irael, Fannie, Grace">
-    <title>Scentology Lab || About Page</title><!--Enter your title here-->
+    <title>Scentology Lab || Services</title><!--Enter your title here-->
 
     <!--Styles-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -24,6 +24,29 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
+    <style>
+      .jumbotron.hurricane {
+        background-size: 100%;
+      }
+
+      .title {
+        background-color: white;
+        width: 100%;
+        padding:30px 40px 10px 20px;
+        background: rgba(256, 256, 256, 0.5);
+        display:inline-block;
+        font-family:Orbitron;
+      }
+
+      @media screen and (min-width: 576px) {
+        .title h1 {
+            font-size:4rem;
+        }
+        .title p {
+          font-size:2rem;
+        }
+      }
+    </style>
   </head>
 
 <body> 
@@ -56,16 +79,69 @@
     </div>
   </nav>
 </header>
+<div class="jumbotron jumbotron-fluid hurricane">
+    <div class="container-fluid">
+        <img src="assets/img/services-cover.jpg" width="100%" class="mt-4">
+      </div>
+</div>
 
 <main>
-<div class="container marketing mx-auto">
+<div class="container mt-4 mx-auto">
   <div class="breadcrumb shadow bg-light" aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">Home</a></li>
       <li class="breadcrumb-item" aria-current="page">Services</li>
     </ol>
   </div><!--end of breadcrumb-->
+  <hr>
 
+  <!--
+    ################################################################
+    Start of Content
+    ################################################################
+  -->
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card" style="width: 22rem; height: auto;">
+        <img src="assets/img/product.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SERVICE 1</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, obcaecati tempore veniam odit dicta recusandae. Possimus ipsa ad distinctio maiores</p>
+          <hr>
+          <a href="#" class="btn btn-outline-primary d-flex justify-content-center">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 22rem; height: auto;">
+        <img src="assets/img/perfumes.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SERVICE 2</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, obcaecati tempore veniam odit dicta recusandae. Possimus ipsa ad distinctio maiores</p>
+          <hr>
+          <a href="#" class="btn btn-outline-primary d-flex justify-content-center">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card" style="width: 22rem; height: auto;">
+        <img src="assets/img/solaire.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">SERVICE 3</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, obcaecati tempore veniam odit dicta recusandae. Possimus ipsa ad distinctio maiores</p>
+          <hr>
+          <a href="#" class="btn btn-outline-primary d-flex justify-content-center">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--
+    ################################################################
+    End of Content
+    ################################################################
+  -->
   <hr>
   <!--TESTIMONIALS-->
   <div class="row mt-4">
