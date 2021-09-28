@@ -72,7 +72,7 @@
           </div>
       <?php endif ?>
   <hr class="mb-5 mt-5" id="contact">
-  <h2 class="featurette-heading mt-0" style="text-align: center;">Get in touch with us</h2>
+  <h2 class="featurette-heading mt-0" style="text-align: center;">Sign up to our Fan Page to get updated with our latest products and promotions!</h2>
 
   <!--Start of form-->
   <div class="row featurette">
