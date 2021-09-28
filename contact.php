@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -42,7 +43,7 @@
             <a class="nav-link hoverable" id="len" href="about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link hoverable active" id="len5" aria-current="page" href="contact.html">Contact</a>
+            <a class="nav-link hoverable active" id="len5" aria-current="page" href="contact.php">Contact</a>
           </li>
         </ul>
       </div>
@@ -60,9 +61,18 @@
   </div><!--end of breadcrumb-->
 
   <!--Start of main content-->
-
+  <?php
+      if(isset($_SESSION['message'])): ?>
+            <div class="alert alert-<?=$_SESSION['msg_type']?> alert-dismissible fade show text-center" role="alert" style="margin-bottom: -10px; margin-top:15px;">
+              <?php
+                echo $_SESSION['message'];
+                unset($_SESSION['message']);
+              ?>
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+      <?php endif ?>
   <hr class="mb-5 mt-5" id="contact">
-  <h2 class="featurette-heading mt-0" style="text-align: center;">Get in touch </h2>
+  <h2 class="featurette-heading mt-0" style="text-align: center;">Get in touch with us</h2>
 
   <!--Start of form-->
   <div class="row featurette">
@@ -70,9 +80,9 @@
       <img src="assets/img/about3.jpg" style="width: 500px; height: 500px;" class="shadow mb-5 bg-white rounded img-fluid">
     </div>
     <div class="col-md-7 order-lg-last order-first p-3">
-      <form action="#" class="g-3 needs-validation" method="POST" novalidate>
+      <form action="includes/sendEmail.php" class="g-3 needs-validation" method="POST" novalidate>
         <div class="mb-3">
-          <label class="form-label lead"><strong>Fullname</strong></label>
+          <label class="form-label lead"><strong>Name</strong></label>
           <input type="text" class="form-control" name="name" id="validationCustom01" placeholder="Your fullname" required>
             <div class="invalid-feedback">
               Please enter your fullname
@@ -80,9 +90,9 @@
         </div>
         <div class="mb-3">
           <label class="form-label lead"><strong>Email address</strong></label>
-          <input type="email" class="form-control" name="email" id="validationCustomUsername" placeholder="Your email address" required>
+          <input type="email" class="form-control" name="email" placeholder="Your email address" required>
             <div class="invalid-feedback">
-              Please enter a valid email.
+              Please enter a valid email. id="validationCustomUsername"
             </div>
         </div>
         <div class="mb-3">
@@ -111,12 +121,12 @@
     <div class="row featurette">
       <div class="col-md-7">
         <h3 class="featurette-heading mb-3"><span class="text-muted">Connect with us</span></h3>
-        <h5 class="lead">For support or any questions:</h5>
-        <p class="lead">Email Us at: <b>support@scentologylab.com</b></p>
-        <p class="lead mt-0"><b>Contact Number: </b>+639052549897</p>
+        <h5 class="lead">To book an appointment, feedbacks or other concerns:</h5>
+        <p class="lead">Email Us at: <b>ScentologyLabPH@gmail.com</b></p>
+        <p class="lead mt-0"><b>Contact Number: </b>+639952356002 or (046) 238 7033</p>
 
         <h4 class="mt-4"><span class="text-muted">Address</span></h4>
-        <p class="lead">Cavite Philippines, South East Asia, Earth, Solar System, Milky Way</p>
+        <p class="lead">002 Unit 2A Sta. Rosa - Tagaytay Rd., Putingkahoy, Silang Cavite 4118</p>
       </div>
       <div class="col-md-5">
         <img src="assets/img/bldg.jpg" style="width: 500px; height: 500px;" class="shadow p-3 mb-5 bg-white rounded img-fluid">
@@ -147,6 +157,6 @@
   </main>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-      
+  <script src="assets/js/validation.js"></script>
 </body>
 </html>
