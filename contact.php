@@ -72,11 +72,7 @@
           </div>
       <?php endif ?>
   <hr class="mb-5 mt-5" id="contact">
-<<<<<<< HEAD:contact.php
   <h2 class="featurette-heading mt-0" style="text-align: center;">Get in touch with us</h2>
-=======
-  <h2 class="featurette-heading mt-0" style="text-align: center;">Get in touch with us.</h2>
->>>>>>> 537e704ccfe16256ff94e90b62a0b68bc4fe91b0:contact.html
 
   <!--Start of form-->
   <div class="row featurette">
@@ -86,13 +82,8 @@
     <div class="col-md-7 order-lg-last order-first p-3">
       <form action="includes/sendEmail.php" class="g-3 needs-validation" method="POST" novalidate>
         <div class="mb-3">
-<<<<<<< HEAD:contact.php
           <label class="form-label lead"><strong>Name</strong></label>
           <input type="text" class="form-control" name="name" id="validationCustom01" placeholder="Your fullname" required>
-=======
-          <label class="form-label lead"><strong>Fullname</strong></label>
-          <input type="text" class="form-control" name="name" id="validationCustom01" placeholder="Your Name" required>
->>>>>>> 537e704ccfe16256ff94e90b62a0b68bc4fe91b0:contact.html
             <div class="invalid-feedback">
               Please enter your fullname
             </div>
