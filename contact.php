@@ -92,7 +92,7 @@
           <label class="form-label lead"><strong>Email address</strong></label>
           <input type="email" class="form-control" name="email" placeholder="Your email address" required>
             <div class="invalid-feedback">
-              Please enter a valid email. id="validationCustomUsername"
+              Please enter a valid email
             </div>
         </div>
         <div class="mb-3">
