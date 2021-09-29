@@ -49,10 +49,10 @@ if(isset($_POST['send'])){
         $mail->send();
  
         $_SESSION['message'] = "Hi " . $name . " Your message was successfully sent thank you!";
-        $_SESSION['msg_type'] = "success";
+        $_SESSION['msg_type'] = "danger";
     } catch (Exception $e) {
 	    $_SESSION['message'] = "Your message was not sent, please try again.";
-        $_SESSION['msg_type'] = "danger";
+        $_SESSION['msg_type'] = "warning";
     }
 
     header("location: ../contact.php");
